@@ -1,0 +1,23 @@
+body {
+	background-color: #282a35;
+}
+#path {
+	color : lightgray;
+}
+
+input {
+	background-color: transparent;
+	border: none;
+	color: lightgray;
+	outline: none;
+}
+#history{
+	color: lightgray;
+}
+#container {
+	width: 100vh;
+	height: 100vh;
+	color: white;
+	font: center;
+	background-color: #282a35;
+}
