@@ -19,13 +19,13 @@ function command(cmd) {
             document.getElementById('history').innerHTML = '';
             break;
         case 'about':
-            addLine('Website made by Micha³ Koz³owski as portfolio, check contact for more');
+            addLine('Website made by Michal Kozlowski as portfolio, check contact for more');
             break;
         case 'projects':
             addLine('Full list of projects: [RC autonomus car, Spudgun, and more]');
             break;
         case 'contact':
-            addLine('Insta: https//www.instagram.com/kolega__michal/')
+            addLine('GitHub: https://github.com/M1chol')
             break;
 
         default:
