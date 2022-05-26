@@ -1,0 +1,66 @@
+:root {
+	--green: #6a8759;
+	--white: #a9b7c6;
+	--red: #a94826;
+	--orange: #cc7832;
+	--black: #2b2b2b;
+}
+
+
+body {
+	background-color: var(--black);
+	font-family: 'Courier New', monospace;
+}
+#path {
+	color: var(--green);
+	line-height: 1.3em;
+	margin: 0;
+	letter-spacing: 0.05em;
+	
+}
+::-webkit-scrollbar{
+	width: 0px;
+}
+p {
+	line-height: 1.3em;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	letter-spacing: 0.05em;
+	animation: anim 1s steps(20, end);
+	color: var(--green)
+}
+@keyframes anim {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+.no-anim {
+	animation: anim 0 steps(30, end);
+}
+#foot {
+	max-width: 100vh;
+	height: 80px;
+}
+input {
+	font-family: 'Courier New', monospace;
+	max-width: 100vh;
+	background-color: transparent;
+	border: none;
+	color: var(--green);
+	line-height: 1.3em;
+	margin: 0;
+	letter-spacing: 0.05em;
+	outline: none;
+	font-size: 16px;
+}
+.red {
+	color: var(--red);
+}
+.orange{
+	color: var(--orange);
+}
