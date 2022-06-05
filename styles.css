@@ -1,0 +1,94 @@
+:root {
+	/*retro*/
+	--retro_bg: #0D0D0D;
+	--retro_error: #D90467;
+	--retro_other: #4630D9;
+	--retro_text: #05F2DB;
+	/*dark*/
+	--dark_bg: #2b2b2b;
+	--dark_error: #a94826;
+	--dark_other: #cc7832;
+	--dark_text: #6a8759;
+	/*light*/
+	--light_bg: #F2F2F2;
+	--light_error: #D92B04;
+	--light_other: #8448D9;
+	--light_text: #0D0D0D;
+	/*willow green*/
+	--willow_bg: #A8BFAA;
+	--willow_error: #404040;
+	--willow_other: #5c695d;
+	--willow_text: #0D0D0D;
+	/*hacker*/
+	--hacker_bg: black;
+	--hacker_error: green;
+	--hacker_other: green;
+	--hacker_text: green;
+	/**/
+	--bg_color: var(--dark_bg);
+	--error_color: var(--dark_error);
+	--other_color: var(--dark_other);
+	--text_color: var(--dark_text);
+}
+::selection {
+	background: var(--other_color);
+	color: var(--bg_color);
+}
+body {
+	background-color: var(--bg_color);
+	font-family: 'Courier New', monospace;
+}
+#path {
+	color: var(--text_color);
+	line-height: 1.3em;
+	margin: 0;
+	letter-spacing: 0.05em;
+	
+}
+::-webkit-scrollbar{
+	width: 0px;
+}
+p {
+	line-height: 1.3em;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	letter-spacing: 0.05em;
+	animation: anim 1s steps(20, end);
+	color: var(--text_color)
+}
+@keyframes anim {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+.no-anim {
+	animation: anim 0 steps(30, end);
+}
+#foot {
+	max-width: 100vh;
+	height: 80px;
+}
+input {
+	font-family: 'Courier New', monospace;
+	width: 50vh;
+	background-color: transparent;
+	border: none;
+	color: var(--text_color);
+	line-height: 1.3em;
+	margin: 0;
+	letter-spacing: 0.05em;
+	outline: none;
+	font-size: 16px;
+
+}
+.err {
+	color: var(--error_color);
+}
+.other{
+	color: var(--other_color);
+}
