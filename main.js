@@ -82,7 +82,7 @@ function command(cmd) {
                 loopLines(projects)
                 break;
             case 'contact':
-                addLine('Insta: www.instagram.com/kolega__michal/, Git: github.com/M1chol');
+                addLine('Email: m1chol@proton.me, Git: github.com/M1chol');
                 break;
             case 'title':
                 loopLines(title1, "other");
@@ -102,24 +102,16 @@ function command(cmd) {
                 inputLine("Style name:", "style-change")
                 break;
             case 'ver':
-                addLine('Version: 0.8');
+                addLine('Version: 0.8 (preview)');
                 break;
             case 'login':
-                inputLine("Username:", "login-stash")
+                addLine('Not working in preview');
                 break;
             case 'logout':
-                if (user_info[1] == default_user_info[1]) {
-                    addLine("Can't logout from guest account", 'err');
-                } else {
-                    addLine('Logout successfull', 'other');
-                    user_info = default_user_info;
-                    updateSite();
-                }
+                addLine('Not working in preview');
                 break;
             case 'register':
-                addLine('How to use: register myName myPassword myStyle')
-                addLine('example: register <span class="other">John paswr retro</span>')
-                addLine('will create account John with password "paswr" with default style retro')
+                addLine('Not working in preview');
                 break;
             default:
                 print_error(0)
@@ -142,7 +134,7 @@ function command(cmd) {
                 execute('style-change', cmd_arr[1])
                 break;
             case 'login':
-                execute('login-stash', cmd_arr[1])
+                addLine('Not working in preview');
                 break;
             default:
                 print_error(0)
@@ -152,7 +144,7 @@ function command(cmd) {
     } else if (cmd_arr.length == 3) {
         switch (cmd_base.toLowerCase()) {
             case 'login':
-                execute('login-stash', cmd_arr[1], cmd_arr[2]);
+                addLine('Not working in preview');
                 break;
         }
         console.log(cmd_base, "executed with values", cmd_arr[1], cmd_arr[2])
@@ -160,7 +152,7 @@ function command(cmd) {
     } else if (cmd_arr.length == 4) {
         switch (cmd_base.toLowerCase()) {
             case 'register':
-                register(cmd_arr[1], cmd_arr[2], cmd_arr[3])
+                addLine('Not working in preview');
                 break;
         }
     } else {
